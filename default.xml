@@ -2,7 +2,17 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
+
+  <remote name="fe"
+          fetch="git://git.free-electrons.com" />
+
+  <remote name="gitorious"
+          fetch="git://gitorious.org" />
+
+  <remote name="libusb"
+          fetch="git://libusb.org" />
+
   <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
            sync-j="4" />
@@ -134,8 +144,6 @@
   <project path="external/libppp" name="platform/external/libppp" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
-  <project path="external/libusb" name="platform/external/libusb" />
-  <project path="external/libusb_aah" name="platform/external/libusb_aah" groups="libusb_aah" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" />
   <project path="external/libvorbis" name="platform/external/libvorbis" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
@@ -382,5 +390,10 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+  <project path="kernel" name="rowboat/kernel" revision"rowboat-am335x-kernel-3.2" remote="gitorious" />
+  <project path="external/libusb" name="platform/external/libusb" remote="fe" revision="jelly-bean-training" />
+  <project path="device/ti/beagleboneblack" name="android/training/vendor-ti-beagleboneblack" revision="rowboat-jb-4.3-fe-solutions" remote="fe" />
+  <project path="hardware/ti/sgx" name="android/training/hardware-ti-sgx" revision="ti_sgx_sdk-ddk_1.10-jb-4.3-fe" remote="fe" />
 
 </manifest>
