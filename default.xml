@@ -391,7 +391,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <project path="kernel" name="rowboat/kernel" revision"rowboat-am335x-kernel-3.2" remote="gitorious" />
+  <project path="kernel" name="rowboat/kernel" revision="rowboat-am335x-kernel-3.2" remote="gitorious" />
   <project path="external/libusb" name="platform/external/libusb" remote="fe" revision="jelly-bean-training" />
   <project path="device/ti/beagleboneblack" name="android/training/vendor-ti-beagleboneblack" revision="rowboat-jb-4.3-fe-solutions" remote="fe" />
   <project path="hardware/ti/sgx" name="android/training/hardware-ti-sgx" revision="ti_sgx_sdk-ddk_1.10-jb-4.3-fe" remote="fe" />
